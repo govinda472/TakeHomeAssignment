@@ -61,7 +61,7 @@ label:hover {
   outline: none;
   border-color: #3498db; 
   box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
-
+}
 
 @media (max-width: 768px) {
   .search-container input[type="text"] {
