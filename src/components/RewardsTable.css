@@ -31,3 +31,17 @@
   color: #333;
 }
 
+.table-container th,
+.table-container td {
+  border: 1px solid #ddd;
+}
+
+.table-container th:first-child,
+.table-container td:first-child {
+  text-align: left; 
+}
+
+.table-container th:last-child,
+.table-container td:last-child {
+  font-weight: bold; /
+}
