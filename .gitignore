@@ -1,0 +1,22 @@
+# Dependency directories
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.npm/
+
+# dotenv environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+
+# Miscellaneous
+.DS_Store # macOS-specific files
