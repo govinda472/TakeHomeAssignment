@@ -1,2 +1,1 @@
-# forked_takehoe
-Created with CodeSandbox
+# Take home assignment for customer rewards
