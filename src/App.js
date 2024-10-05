@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getRewards, getMonths } from "./server/mockAPIs";
+import { getRewards, getMonths } from "./mockServer/mockAPIs";
 import RewardsTable from "./components/RewardsTable";
 import "./styles.css";
 import { useMemo } from "react";
@@ -9,12 +9,19 @@ export default function App() {
   const [months, setMonths] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const timeFrame = 3;
+
   useEffect(() => {
+
     getRewards(timeFrame).then((rewards) => {
       setRewardsData(rewards);
+    }).catch((error) => {
+      alert("Error fetching months: " + error.message);
     });
+    
     getMonths(timeFrame).then((availableMonths) => {
       setMonths(availableMonths);
+    }).catch((error) => {
+      alert("Error fetching months: " + error.message);
     });
   }, []);
 
