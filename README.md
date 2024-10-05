@@ -8,13 +8,16 @@
    ```bash
    git clone https://github.com/govinda472/TakeHomeAssignment.git
 
+2. **Change directory**  
    ```bash
 cd TakeHomeAssignment
 
-2.  **install dependancies**
+3.  **install dependancies**
+
+      ```bash
  npm install
 
-2.  **runnning it**
+4.  **runnning it**
 
    ```bash
 npm start
