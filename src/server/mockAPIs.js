@@ -29,13 +29,15 @@ export const getRewards = async () => {
   return Object.values(rewards);
 };
 
-export const getMonths = async () => {
+export const getMonths = async (numberOfMonths) => {
+  const startDate = moment().subtract(numberOfMonths, "months"); 
+
   const months = [
     ...new Set(
-      transactions.map((transaction) =>
-        moment(transaction.date).format("MMMM YYYY")
-      )
+      transactions
+        .filter((transaction) => moment(transaction.date).isSameOrAfter(startDate)) 
+        .map((transaction) => moment(transaction.date).format("MMMM YYYY")) 
     ),
   ];
-  return months;
+  return months.sort((a, b) => moment(a, "MMMM YYYY").diff(moment(b, "MMMM YYYY")));
 };

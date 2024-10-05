@@ -9,12 +9,13 @@ export default function App() {
   const [months, setMonths] = useState([]);
   const [sortBy, setSortBy] = useState("id");
   const [searchQuery, setSearchQuery] = useState("");
-
+  
+  const timeFrame = 3;
   useEffect(() => {
     getRewards().then((rewards) => {
       setRewardsData(rewards);
     });
-    getMonths().then((availableMonths) => {
+    getMonths(timeFrame).then((availableMonths) => {
       setMonths(availableMonths);
     });
   }, []);
