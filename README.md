@@ -10,17 +10,19 @@
 
 2. **Change directory**  
    ```bash
-cd TakeHomeAssignment
+   cd TakeHomeAssignment
 
 3.  **install dependancies**
 
       ```bash
- npm install
+      npm install
 
 4.  **runnning it**
 
    ```bash
-npm start
+    npm start
+   ```
+
 
 you will be redirected to your browser to the site if not open up your broswer and go to this url:
 
