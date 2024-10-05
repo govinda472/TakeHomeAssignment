@@ -12,7 +12,7 @@ export default function App() {
   
   const timeFrame = 3;
   useEffect(() => {
-    getRewards().then((rewards) => {
+    getRewards(timeFrame).then((rewards) => {
       setRewardsData(rewards);
     });
     getMonths(timeFrame).then((availableMonths) => {
