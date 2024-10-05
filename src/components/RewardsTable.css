@@ -45,3 +45,7 @@
 .table-container td:last-child {
   font-weight: bold; 
 }
+
+.sortable-column {
+  cursor: pointer;
+}
